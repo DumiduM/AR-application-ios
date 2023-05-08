@@ -58,6 +58,7 @@ public class ImageTracking : MonoBehaviour
 
         GameObject prefab = spawnedPrefabs[name];
         prefab.transform.position = position;
+        prefab.transform.rotation = trackedImage.transform.rotation;
         prefab.SetActive(true);
 
         foreach(GameObject go in spawnedPrefabs.Values)
